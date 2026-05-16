@@ -1,0 +1,9 @@
+{
+  "name": "aitools12/wan-3-co",
+  "description": "Wan 3 AI video generator metadata for Packagist indexing.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://www.wan-3.co/",
+  "authors": [{"name": "Wan 3"}],
+  "require": {}
+}
