@@ -1,0 +1,111 @@
+:root {
+  --ink: #1c1411;
+  --muted: #705c53;
+  --accent: #0891b2;
+  --accent-2: #0ea5e9;
+  --bg: #fff8f4;
+  --card-bg: #ffffff;
+  --line: rgba(91, 60, 43, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+.container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--accent); }
+
+.hero {
+  text-align: center;
+  padding: 60px 0 40px;
+  background: linear-gradient(180deg, #fff8f4, #ffe9de);
+}
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.7);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+h1 { font-size: 36px; line-height: 1.1; margin-bottom: 12px; }
+.subtitle { font-size: 18px; color: var(--muted); margin-bottom: 24px; }
+.hero-actions { display: flex; gap: 12px; justify-content: center; }
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+}
+.btn.secondary {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.section { padding: 48px 0; }
+.section.alt { background: #fff0ea; }
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+.card h3 { font-size: 18px; margin-bottom: 8px; }
+.card p { color: var(--muted); }
+
+.steps { list-style: decimal; padding-left: 20px; }
+.steps li { margin-bottom: 8px; }
+
+.use-cases { list-style: disc; padding-left: 20px; }
+.use-cases li { margin-bottom: 8px; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.faq-item { margin-bottom: 20px; }
+.faq-item h3 { font-size: 18px; margin-bottom: 4px; }
+.faq-item p { color: var(--muted); }
+
+.footer {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  .hero { padding: 40px 0 24px; }
+  .grid { grid-template-columns: 1fr; }
+}
